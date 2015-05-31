@@ -1,7 +1,7 @@
 {
     "name":        "cfg2kv-2-sm-ast",
     "description": "variant: State Machine (SM), Abstract Syntax Tree (AST)",
-    "repository":  "rse/parsing",
+    "repository":  "rse/parsing-techniques",
     "license":     "MIT",
     "dependencies": {
         "asty-astq": "*"

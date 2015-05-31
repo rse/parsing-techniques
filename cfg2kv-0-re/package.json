@@ -1,7 +1,7 @@
 {
     "name":        "cfg2kv-0-re",
     "description": "variant: Regular Expresssions (RE)",
-    "repository":  "rse/parsing",
+    "repository":  "rse/parsing-techniques",
     "license":     "MIT",
     "dependencies": {
     }
