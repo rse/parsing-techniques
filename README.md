@@ -75,7 +75,7 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
                                | produces key/values in section-first/properties-second order
                                | inflexible in output generation
                                | hard to implement error reporting
-                               | impossile to track line/column
+                               | impossible to track line/column
 
 - [`cfg2kv-1-sm/cfg2kv.js`](cfg2kv-1-sm/cfg2kv.js):<br/>
   **State Machine (SM)**:<br/>
