@@ -125,7 +125,14 @@ damit auch nicht zu beschäftigen.
 \end{document}
 ```
 
-### SGML/HTML/XML
+    Pros                       | Cons
+    ---------------------------|-----------------------------------
+    supports custom tags       | harder to parse
+
+### SGML/XML (HTML)
+
+SGML and XML are the basis for many markup languages.
+Most prominently, (X)HTML is based on them to markup webpages.
 
 ```html
 <html>
@@ -138,6 +145,11 @@ damit auch nicht zu beschäftigen.
     </body>
 </html>
 ```
+
+    Pros                             | Cons
+    ---------------------------------|-----------------------------------
+    very widespread                  | much boilerplate, because of very chatty syntax
+    parsers available out-of-the-box |
 
 
 Configuration Languages
