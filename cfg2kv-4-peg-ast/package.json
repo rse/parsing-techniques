@@ -1,0 +1,12 @@
+{
+    "name":        "cfg2kv-4-peg-ast",
+    "description": "variant: Parsing Expression Grammar (PEG) Parser, Abstract Syntax Tree (AST)",
+    "repository":  "rse/parsing",
+    "license":     "MIT",
+    "dependencies": {
+        "asty-astq":  "*",
+        "pegjs-util": "*",
+        "pegjs-otf":  "*",
+        "pegjs":      "*"
+    }
+}

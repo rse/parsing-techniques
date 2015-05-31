@@ -1,0 +1,9 @@
+{
+    "name":        "cfg2kv",
+    "description": "top-level driver",
+    "repository":  "rse/parsing",
+    "license":     "MIT",
+    "dependencies": {
+        "babel":   "*"
+    }
+}

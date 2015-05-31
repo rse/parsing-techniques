@@ -1,0 +1,10 @@
+{
+    "name":        "cfg2kv-3-ls-rdp-ast",
+    "description": "variant: Lexical Scanner (LS), Recursive Descent Parser (RDP), Abstract Syntax Tree (AST)",
+    "repository":  "rse/parsing",
+    "license":     "MIT",
+    "dependencies": {
+        "tokenizr":  "*",
+        "asty-astq": "*"
+    }
+}
