@@ -2,7 +2,7 @@
 Parsing Techniques
 ==================
 
-There are lots of [formal languages](LANGUAGE.md) for various kinds of
+There are lots of [formal languages](LANGUAGES.md) for various kinds of
 practical purposes. But they have all one thing in common: for further
 processing them, they first have to be parsed from their character
 string representation. This is a short lecture about various techniques
