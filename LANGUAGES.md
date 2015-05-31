@@ -2,7 +2,17 @@
 Markup Languages
 ----------------
 
+Markup languages are actually two languages combined: a "host" language
+(often just plain text) and the embedded markup language to mark
+up various parts of the host language. As the host language can be
+arbitrary, markup languages sometimes are hard to parse because they
+have to recognize tokens representing the arbitrary plain text.
+
 ### POD-like
+
+[Plain Old Document](http://perldoc.perl.org/perlpod.html) (POD) style
+markup is a very concise and still flexible enough markup language.
+It is often used in variants where it is mixed together with Markdown elements.
 
 ```
 API Management
@@ -33,7 +43,53 @@ C<ComponentJS>. It is a common convention to change the symbol to C<cs> (for
   |      throw new Error("need at least ComponentJS as of 20120101")
 ```
 
+    Pros                       | Cons
+    ---------------------------|-----------------------------------
+    very concise               | somewhat "cryptic" in style
+    easy to parse              |
+    supports custom tags       |
+
+### Markdown
+
+[Markdown](https://daringfireball.net/projects/markdown/) is a very
+readable markup language for writing documents, inspired by ASCII-based
+email texts of the 1990's.
+
+```md
+Parsing Techniques
+==================
+
+There are lots of [formal languages](LANGUAGES.md) for various kinds of
+practical purposes. But they all have one thing in common: for further
+processing them inside a program, they first have to be parsed from
+their character string representation. This is the material of a lecture
+about various techniques to perform this parsing step.
+
+Notice: the code is all written in [ECMAScript
+6](http://en.wikipedia.org/wiki/ECMAScript), is on-the-fly transpiled
+to ECMAScript 5 and then executed under [Node.js](http://nodejs.org/),
+but it actually doesn't matter very much. Equivalent code can be written
+in Java or C#, too. The only major point is just that the required
+third-party libraries have to be also changed, of course.
+
+Parsing Input
+-------------
+
+Let's image a formal language for describing key/value based
+configurations in a redundancy-free nested structure.
+A sample configuration can be:
+```
+
+    Pros                       | Cons
+    ---------------------------|-----------------------------------
+    very concise               | does not provide custom tags
+    easy to parse              |
+
 ### LaTeX
+
+[LaTeX](http://en.wikipedia.org/wiki/LaTeX) is one of the oldest
+markup languages. It is based on the underlying TeX macro language
+and used for writing documents.
 
 ```tex
 \documentclass{scrartcl}
