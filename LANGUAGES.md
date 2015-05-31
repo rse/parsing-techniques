@@ -216,7 +216,7 @@ Query Languages
 
 ### ASTq
 
-```
+```js
 astq.query(`
     // VariableDeclarator [
            /:id   Identifier [ @name  ]
@@ -233,7 +233,7 @@ astq.query(`
 
 ### DuckyJS Selectors
 
-```
+```js
 ducky.select({
     foo: {
         bar: {
