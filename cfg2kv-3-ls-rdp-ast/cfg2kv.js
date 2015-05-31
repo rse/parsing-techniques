@@ -1,6 +1,6 @@
 
 import ASTY     from "asty-astq"
-import Tokenizr from "/u/rse/prj/node/tokenizr"
+import Tokenizr from "tokenizr"
 
 export default class CFG2KV {
 
