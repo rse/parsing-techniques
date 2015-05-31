@@ -59,7 +59,7 @@ with their pros and cons. For illustration purposes
 we've implemented a bunch of them. Each one
 can be run by executing `make <id>`:
 
-- `0-re`:<br/>
+- [`0-re`](cfg2kv-0-re/cfg2kv.js):<br/>
   **Regular Expressions (RE)**<br/>
   This is the Unix rooky approach. It uses complex Regular Expressions
   to match sections and property assignments. Section blocks are matched
