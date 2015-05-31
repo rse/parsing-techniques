@@ -75,6 +75,7 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
                                | produces key/values in section-first/properties-second order
                                | inflexible in output generation
                                | hard to implement error reporting
+                               | impossile to track line/column
 
 - [`cfg2kv-1-sm/cfg2kv.js`](cfg2kv-1-sm/cfg2kv.js):<br/>
   **State Machine (SM)**:<br/>
@@ -90,6 +91,7 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
     very much code             | hard to understand
     no external dependencies   | still inflexible in output generation
                                | hard to implement error reporting
+                               | hard to track line/column
 
 - [`cfg2kv-2-sm-ast/cfg2kv.js`](cfg2kv-2-sm-ast/cfg2kv.js):<br/>
   **State Machine (SM), Abstract Syntax Tree (AST)**<br/>
@@ -109,6 +111,7 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
     still rather much code             | still partly hard to understand
     very flexible in output generation | external dependencies
                                        | hard to implement error reporting
+                                       | hard to track line/column
 
 - [`cfg2kv-3-ls-rdp-ast/cfg2kv.js`](cfg2kv-3-ls-rdp-ast/cfg2kv.js):<br/>
   **Lexical Scanner (LS), Recursive Descent Parser (RDP), Abstract Syntax Tree (AST)**<br/>
@@ -123,6 +126,7 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
     acceptable amount of code          | external dependencies
     easier to understand               | still somewhat lower-level
     very flexible in output generation | hard to implement error reporting
+    semi-automatic line/column tracking| 
 
 - [`cfg2kv-4-peg-ast/cfg2kv.js`](cfg2kv-4-peg-ast/cfg2kv.js):<br/>
   [`cfg2kv-4-peg-ast/cfg2kv.pegjs`](cfg2kv-4-peg-ast/cfg2kv.pegjs):<br/>
@@ -142,4 +146,5 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
     very high-level                    | 
     very flexible in output generation | 
     automatic error generation         | 
+    automatic line/column tracking     | 
 
