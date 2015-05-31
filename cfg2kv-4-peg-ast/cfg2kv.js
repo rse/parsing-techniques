@@ -6,6 +6,7 @@ import PEGutil from "pegjs-util"
 
 export default class CFG2KV {
 
+    /*  parse configuration format into key/value format  */
     cfg2kv (cfg) {
         let ast = this.cfg2ast(cfg)
         console.log(ast.dump())
@@ -13,8 +14,8 @@ export default class CFG2KV {
         return kv
     }
 
+    /*  parse configuration format into Abstract Syntax Tree (AST)  */
     cfg2ast (cfg) {
-        /*  parse configuration into an Abstract Syntax Tree (AST)  */
         let asty = new ASTY()
         let parser = PEG.buildParserFromFile(path.join(__dirname, "cfg2kv.pegjs"), { optimize: "speed" })
         let result = PEGutil.parse(parser, cfg, {
@@ -29,7 +30,7 @@ export default class CFG2KV {
         return result.ast
     }
 
-    /*  convert AST to resulting data structure  */
+    /*  generate key/value format from Abstract Syntax Tree (AST)  */
     ast2kv (ast) {
         let kv = ""
         ast.query("// Property").forEach((p) => {

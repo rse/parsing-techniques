@@ -1,6 +1,9 @@
 
 export default class CFG2KV {
+
+    /*  parse configuration format into key/value format  */
     cfg2kv (cfg) {
+
         /*  helper function for character class checking  */
         const isAlpha = (ch) => {
             let cc = ch.charCodeAt(0)

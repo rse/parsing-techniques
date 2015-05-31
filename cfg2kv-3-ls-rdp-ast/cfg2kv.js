@@ -4,6 +4,7 @@ import Tokenizr from "tokenizr"
 
 export default class CFG2KV {
 
+    /*  parse configuration format into key/value format  */
     cfg2kv (cfg) {
         let ast = this.cfg2ast(cfg)
         console.log(ast.dump())
@@ -11,6 +12,7 @@ export default class CFG2KV {
         return kv
     }
 
+    /*  parse configuration format into Abstract Syntax Tree (AST)  */
     cfg2ast (cfg) {
         /*  establish abstract syntax tree (AST) node generator  */
         let asty = new ASTY()
@@ -108,7 +110,7 @@ export default class CFG2KV {
         return ast
     }
 
-    /*  convert AST to resulting data structure  */
+    /*  generate key/value format from Abstract Syntax Tree (AST)  */
     ast2kv (ast) {
         let kv = ""
         ast.query("// Property").forEach((p) => {

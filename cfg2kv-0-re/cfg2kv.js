@@ -1,6 +1,7 @@
 
 export default class CFG2KV {
 
+    /*  parse configuration format into key/value format  */
     cfg2kv (cfg) {
         let kv = ""
 
