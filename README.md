@@ -59,7 +59,7 @@ with their pros and cons. For illustration purposes
 we've implemented a bunch of them. Each one
 can be run by executing `make <id>`:
 
-- [`0-re`](cfg2kv-0-re/cfg2kv.js):<br/>
+- [`cfg2kv-0-re/cfg2kv.js`](cfg2kv-0-re/cfg2kv.js):<br/>
   **Regular Expressions (RE)**<br/>
   This is the Unix rooky approach. It uses complex Regular Expressions
   to match sections and property assignments. Section blocks are matched
@@ -76,7 +76,7 @@ can be run by executing `make <id>`:
                                | inflexible in output generation
                                | hard to implement error reporting
 
-- `1-sm`:<br/>
+- [`cfg2kv-1-sm/cfg2kv.js`](cfg2kv-1-sm/cfg2kv.js):<br/>
   **State Machine (SM)**:<br/>
   As Regular Expressions are (unfortunately) not everyone's favorite,
   many people would avoid them and code a parser with bare language
@@ -91,7 +91,7 @@ can be run by executing `make <id>`:
     no external dependencies   | still inflexible in output generation
                                | hard to implement error reporting
 
-- `2-sm-ast`:<br/>
+- [`cfg2kv-2-sm-ast/cfg2kv.js`](cfg2kv-2-sm-ast/cfg2kv.js):<br/>
   **State Machine (SM), Abstract Syntax Tree (AST)**<br/>
   As the direct output generation usually is not recommended (it works
   just for the cases where the output ordering directly follows the
@@ -110,7 +110,7 @@ can be run by executing `make <id>`:
     very flexible in output generation | external dependencies
                                        | hard to implement error reporting
 
-- `3-ls-rdp-ast`:<br/>
+- [`cfg2kv-3-ls-rdp-ast/cfg2kv.js`](cfg2kv-3-ls-rdp-ast/cfg2kv.js):<br/>
   **Lexical Scanner (LS), Recursive Descent Parser (RDP), Abstract Syntax Tree (AST)**<br/>
   One can get rid of the low-level character parsing by splitting the
   parsing into two streams: tokenization of characters and parsing the
@@ -124,7 +124,8 @@ can be run by executing `make <id>`:
     easier to understand               | still somewhat lower-level
     very flexible in output generation | hard to implement error reporting
 
-- `4-peg-ast`:<br/>
+- [`cfg2kv-4-peg-ast/cfg2kv.js`](cfg2kv-4-peg-ast/cfg2kv.js):<br/>
+  [`cfg2kv-4-peg-ast/cfg2kv.pegjs`](cfg2kv-4-peg-ast/cfg2kv.pegjs):<br/>
   **Parsing Expression Grammar (PEG) Parser, Abstract Syntax Tree (AST)**<br/>
   The structure behind Recursive Descent Parsing is actually an LL(1)
   grammar. An efficient variant of LL(1) are Parsing Expression Grammars
