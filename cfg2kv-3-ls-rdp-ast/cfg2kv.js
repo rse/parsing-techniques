@@ -23,7 +23,7 @@ export default class CFG2KV {
             if (typeof ref === "object" && ref instanceof Tokenizr.Token)
                 ast.pos(ref.line, ref.column, ref.pos)
             else if (typeof ref === "object" && asty.isA(ref))
-                ast.pos(ref.pos().L, ref.pos().C, ref.pos().O)
+                ast.pos(ref.pos().line, ref.pos().column, ref.pos().offset)
             return ast
         }
 
