@@ -4,7 +4,7 @@
     "repository":  "rse/parsing-techniques",
     "license":     "MIT",
     "dependencies": {
-        "tokenizr":  "*",
-        "asty-astq": "*"
+        "tokenizr":  "~0.9.2",
+        "asty-astq": "~1.2.4"
     }
 }

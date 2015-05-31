@@ -4,6 +4,6 @@
     "repository":  "rse/parsing-techniques",
     "license":     "MIT",
     "dependencies": {
-        "babel":   "*"
+        "babel":   "~5.4.7"
     }
 }
