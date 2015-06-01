@@ -1,0 +1,8 @@
+{
+    "name":        "cfg2kv-1-sm",
+    "description": "variant: State Machine (SM)",
+    "repository":  "rse/parsing-techniques",
+    "license":     "MIT",
+    "dependencies": {
+    }
+}

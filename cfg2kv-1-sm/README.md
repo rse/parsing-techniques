@@ -1,7 +1,7 @@
 
 Variant: **State Machine (SM)**
 
-Source: [`cfg2kv.js`](cfg2kv.js)
+Source: [`cfg2kv.js`](cfg2kv.js), [`package.json`](package.json)
 
 As Regular Expressions are (unfortunately) not everyone's favorite,
 many people would avoid them and code a parser with bare language
