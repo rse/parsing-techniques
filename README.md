@@ -74,6 +74,10 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
   are matched and then immediately lead to the resulting key/value
   output.
 
+  RECOMMENDATION: Use only for "code once &amp; forget" situations or
+  if external dependencies are not acceptable, but be aware of the hard
+  limitations.
+
     Pros                       | Cons
     ---------------------------|-----------------------------------
     very less code             | hard to understand
@@ -92,6 +96,9 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
   with the Cons of technique 0 above, so a [State Machine](http://en.wikipedia.org/wiki/Finite-state_machine) is used to
   support multiple sections, arbitrary nesting, more precisely string
   parsing and expected output ordering.
+
+  RECOMMENDATION: Avoid this approach at all as it is too low-level
+  and leads to too much boilerplate code.
 
     Pros                       | Cons
     ---------------------------|-----------------------------------
@@ -114,6 +121,9 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
   Regular Expressions again. This uses my [ASTy](https://github.com/rse/asty)
   and [ASTq](https://github.com/rse/astq) as external libraries.
 
+  RECOMMENDATION: Avoid this approach at all as it is also too low-level
+  and leads to too much boilerplate code.
+
     Pros                               | Cons
     -----------------------------------|-----------------------------------
     still rather much code             | still partly hard to understand
@@ -130,6 +140,10 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
   switch over to [Recursive Descent Parsing](http://en.wikipedia.org/wiki/Recursive_descent_parser).
   This uses my [Tokenizr](https://github.com/rse/tokenizr), [ASTy](https://github.com/rse/asty)
   and [ASTq](https://github.com/rse/astq) as external libraries.
+
+  RECOMMENDATION: Acceptable for simple formal language structures and
+  limited situations, but usually not worth the effort as it still
+  causes noticable boilerplate code.
 
     Pros                               | Cons
     -----------------------------------|-----------------------------------
@@ -150,6 +164,9 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
   us). Hence, we now switch over to a PEG, but still use the flexible AST
   approach. This uses [PEG.js](http://pegjs.org) and my [ASTy](https://github.com/rse/asty)
   and [ASTq](https://github.com/rse/astq) as external libraries.
+
+  RECOMMENDATION: The preferred approach which should be used whenever possible,
+  as it has to really best Pros/Cons ratio.
 
     Pros                               | Cons
     -----------------------------------|-----------------------------------
