@@ -61,10 +61,11 @@ quux 2
 Parsing Techniques
 ------------------
 
-There are various parsing techniques available, each with their pros and
-cons. For illustration purposes we've implemented a bunch of them. Each
-one can be run by executing `make <id>` where `<id>` is one of `0-re`,
-`1-sm`, `2-sm-ast`, `3-ls-rdp-ast` or `4-peg-ast`:
+There are various parsing techniques available, each with their pros
+and cons. For illustration purposes we've implemented a bunch of them.
+Each one can be run by executing `make <id>` or `node cfg2kv.js <id>`
+where `<id>` is one of `0-re`, `1-sm`, `2-sm-ast`, `3-ls-rdp-ast` or
+`4-peg-ast`:
 
 - [`cfg2kv-0-re/cfg2kv.js`](cfg2kv-0-re/cfg2kv.js):<br/>
   **Regular Expressions (RE)**<br/>
