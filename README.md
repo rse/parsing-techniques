@@ -20,7 +20,7 @@ Parsing Input
 
 Let's image a formal language for describing key/value based
 configurations in a redundancy-free nested structure.
-A sample configuration can be:
+A [sample configuration](sample.cfg) can be:
 
 ```
 foo {
@@ -47,7 +47,7 @@ Parsing Output
 --------------
 
 Let's image we want to parse configurations in the above format into a
-simple key/value format where the sections are flattened:
+[simple key/value format](sample.kv) where the sections are flattened:
 
 ```
 foo.bar.quux 42
