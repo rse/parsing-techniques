@@ -1,5 +1,7 @@
 
-**State Machine (SM)**:<br/>
+Variant: **State Machine (SM)**
+
+Source: [`cfg2kv.js`](cfg2kv.js)
 
 As Regular Expressions are (unfortunately) not everyone's favorite,
 many people would avoid them and code a parser with bare language
