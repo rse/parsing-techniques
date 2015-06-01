@@ -147,14 +147,14 @@ one can be run by executing `make <id>` where `<id>` is one of `0-re`,
   (PEG) where the lexical scanning and syntax parsing can be smartly
   interweaved again and where full-blown parser generators exist (which
   in the background generate the necessary Recursive Descent code for
-  us). Hence, we now switch over to a PEG, but still the flexible AST
+  us). Hence, we now switch over to a PEG, but still use the flexible AST
   approach. This uses [PEG.js](http://pegjs.org) and my [ASTy](https://github.com/rse/asty)
   and [ASTq](https://github.com/rse/astq) as external libraries.
 
     Pros                               | Cons
     -----------------------------------|-----------------------------------
     very less code                     | external dependencies
-    easier to understand               | you have to write grammar
+    easier to understand               | you have to write an LL(1) grammar
     very high-level                    | 
     very flexible in output generation | 
     automatic error generation         | 
