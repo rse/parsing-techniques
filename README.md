@@ -18,7 +18,7 @@ third-party libraries have to be also changed, of course.
 Parsing Input
 -------------
 
-Let's image a formal language for describing key/value based
+Let's imagine a formal language for describing key/value based
 configurations in a redundancy-free nested structure.
 A [sample configuration](sample.cfg) can be:
 
@@ -46,7 +46,7 @@ some cruxes which can become a hurdle for parsing:
 Parsing Output
 --------------
 
-Let's image we want to parse configurations in the above format into a
+Let's imagine we want to parse configurations in the above format into a
 [simple key/value format](sample.kv) where the sections are flattened:
 
 ```
