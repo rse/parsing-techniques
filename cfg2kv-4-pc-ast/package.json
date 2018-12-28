@@ -1,6 +1,6 @@
 {
-    "name":        "cfg2kv-5-pc",
-    "description": "variant: FIXME",
+    "name":        "cfg2kv-4-pc-ast",
+    "description": "variant: Parser Combinators (PC), Abstract Syntax Tree (AST)",
     "repository":  "rse/parsing-techniques",
     "license":     "MIT",
     "dependencies": {

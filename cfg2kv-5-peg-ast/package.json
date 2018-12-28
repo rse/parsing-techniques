@@ -1,5 +1,5 @@
 {
-    "name":        "cfg2kv-4-peg-ast",
+    "name":        "cfg2kv-5-peg-ast",
     "description": "variant: Parsing Expression Grammar (PEG) Parser, Abstract Syntax Tree (AST)",
     "repository":  "rse/parsing-techniques",
     "license":     "MIT",
