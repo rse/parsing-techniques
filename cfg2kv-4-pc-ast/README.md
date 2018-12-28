@@ -15,4 +15,5 @@ causes noticable boilerplate code.
   -----------------------------------|-----------------------------------
   no separation of scanner and parser| external dependencies
   everything is plain host language  | hard to implement error reporting
+                                     | noticable boilerplate code
 
