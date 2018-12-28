@@ -2,6 +2,8 @@
 Parsing Tools
 =============
 
+The following is a list of known tools for parsing in JavaScript.
+
 Parser Generators
 -----------------
 
@@ -30,4 +32,11 @@ Tokenizer/Scanner
 
 - [Moo](https://github.com/no-context/moo)
 - [Tokenizr](https://github.com/rse/tokenizr)
+
+Abstract Syntax Tree (AST)
+--------------------------
+
+- [ASTy](https://github.com/rse/asty)
+- [ASTq](https://github.com/rse/astq)
+- [ASTy-ASTq](https://github.com/rse/asty-astq)
 
