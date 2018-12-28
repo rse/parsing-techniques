@@ -70,6 +70,8 @@ String Generators
 
 Generate strings.
 
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
+- [Divertr](https://github.com/rse/divertr) *
 - [TextFrame](https://github.com/rse/textframe) *
 - [Syntax](https://github.com/rse/syntax/) *
 
