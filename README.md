@@ -79,6 +79,9 @@ links to their particular source code and documentation.
 - [`cfg2kv-3-ls-rdp-ast/`](cfg2kv-3-ls-rdp-ast/):<br/>
   **Lexical Scanner (LS), Recursive Descent Parser (RDP), Abstract Syntax Tree (AST)**
 
-- [`cfg2kv-4-peg-ast/`](cfg2kv-4-peg-ast/):<br/>
+- [`cfg2kv-4-pc-ast/`](cfg2kv-4-pc-ast/):<br/>
+  **Parser Combinators (PC), Abstract Syntax Tree (AST)**
+
+- [`cfg2kv-5-peg-ast/`](cfg2kv-4-peg-ast/):<br/>
   **Parsing Expression Grammar (PEG) Parser, Abstract Syntax Tree (AST)**
 

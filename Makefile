@@ -8,7 +8,8 @@ VARIANTS = \
 	1-sm \
 	2-sm-ast \
 	3-ls-rdp-ast \
-	4-peg-ast
+	4-pc-ast \
+	5-peg-ast
 
 all: bootstrap $(VARIANTS)
 
@@ -35,7 +36,9 @@ cfg2kv:
 	@$(MAKE) $(MFLAGS) cfg2kv VARIANT=$@
 3-ls-rdp-ast:
 	@$(MAKE) $(MFLAGS) cfg2kv VARIANT=$@
-4-peg-ast:
+4-pc-ast:
+	@$(MAKE) $(MFLAGS) cfg2kv VARIANT=$@
+5-peg-ast:
 	@$(MAKE) $(MFLAGS) cfg2kv VARIANT=$@
 
 clean:

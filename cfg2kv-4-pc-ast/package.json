@@ -1,0 +1,10 @@
+{
+    "name":        "cfg2kv-5-pc",
+    "description": "variant: FIXME",
+    "repository":  "rse/parsing-techniques",
+    "license":     "MIT",
+    "dependencies": {
+        "arcsecond": "1.1.1",
+        "asty-astq": "1.12.0"
+    }
+}
