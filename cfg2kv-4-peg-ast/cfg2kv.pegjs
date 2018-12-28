@@ -1,6 +1,6 @@
 
 {
-    var ast = options.util.makeAST(line, column, offset, options)
+    var ast = options.util.makeAST(location, options)
 }
 
 cfg

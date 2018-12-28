@@ -4,6 +4,8 @@
     "repository":  "rse/parsing-techniques",
     "license":     "MIT",
     "dependencies": {
-        "babel":   "~5.8.21"
+        "@babel/node":         "7.2.2",
+        "@babel/preset-env":   "7.2.3",
+        "@babel/core":         "7.2.2"
     }
 }

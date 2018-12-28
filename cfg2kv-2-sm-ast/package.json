@@ -4,6 +4,6 @@
     "repository":  "rse/parsing-techniques",
     "license":     "MIT",
     "dependencies": {
-        "asty-astq": "~1.3.5"
+        "asty-astq": "1.12.0"
     }
 }

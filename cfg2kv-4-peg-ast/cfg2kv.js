@@ -4,7 +4,7 @@ import ASTY    from "asty-astq"
 import PEG     from "pegjs-otf"
 import PEGutil from "pegjs-util"
 
-export default class CFG2KV {
+module.exports = class CFG2KV {
 
     /*  parse configuration format into key/value format  */
     cfg2kv (cfg) {
@@ -17,7 +17,7 @@ export default class CFG2KV {
     /*  parse configuration format into Abstract Syntax Tree (AST)  */
     cfg2ast (cfg) {
         let asty = new ASTY()
-        let parser = PEG.buildParserFromFile(path.join(__dirname, "cfg2kv.pegjs"), { optimize: "speed" })
+        let parser = PEG.generateFromFile(path.join(__dirname, "cfg2kv.pegjs"), { optimize: "speed" })
         let result = PEGutil.parse(parser, cfg, {
             makeAST: (line, column, offset, args) =>
                 asty.create.apply(asty, args).pos(line, column, offset)

@@ -1,6 +1,6 @@
 
 NPM     = npm
-NODE    = ./node_modules/.bin/babel-node
+NODE    = npx babel-node --presets @babel/preset-env
 VARIANT =
 
 VARIANTS = \

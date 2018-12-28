@@ -1,5 +1,5 @@
 
-export default class CFG2KV {
+module.exports = class CFG2KV {
 
     /*  parse configuration format into key/value format  */
     cfg2kv (cfg) {
