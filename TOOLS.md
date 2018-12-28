@@ -38,6 +38,8 @@ Split a stream of characters into tokens.
 String Pattern Matcher
 ----------------------
 
+Match patterns in strings.
+
 - [XRegExp](http://xregexp.com/)
 - [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)]
 - [MicroMatch](https://github.com/micromatch/micromatch)
@@ -46,15 +48,29 @@ String Pattern Matcher
 String Manipulation
 -------------------
 
+Manipulate strings.
+
 - [Voca](https://vocajs.com/)
 
 Object Pattern Matcher
 ----------------------
 
+Match patterns in object graphs.
+
+- [DuckyJS](http://duckyjs.com/)
+- [Extraction](http://extraction.js.org/)
 - [paMatcher](http://pamatcher.js.org/)
 - [z](https://z-pattern-matching.github.io/)
 - [Tailored](https://github.com/elixirscript/tailored)
 - [Fuse.js](http://fusejs.io/)
+
+String Generators
+-----------------
+
+Generate strings.
+
+- [TextFrame](https://github.com/rse/textframe)
+- [Syntax](https://github.com/rse/syntax/)
 
 Abstract Syntax Tree (AST)
 --------------------------
@@ -64,4 +80,13 @@ Manage and operate a tree representing a language structure.
 - [ASTy](https://github.com/rse/asty)
 - [ASTq](https://github.com/rse/astq)
 - [ASTy-ASTq](https://github.com/rse/asty-astq)
+
+Parsing Utilities
+-----------------
+
+Utilities for parsing.
+
+- [PEG.js OTF](https://github.com/rse/pegjs-otf)
+- [PEG.js Util](https://github.com/rse/pegjs-util)
+- [Source-Code-Error](https://github.com/rse/source-code-error)
 
