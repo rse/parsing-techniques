@@ -21,7 +21,7 @@ property
           return ast("Property").set({ key: key, val: val })
       }
 
-id "identifer"
+id "identifier"
     = $([a-zA-Z_][a-zA-Z0-9_]*)
 
 number "integer number"
