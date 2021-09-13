@@ -16,7 +16,7 @@ limitations.
 
   Pros                       | Cons
   ---------------------------|-----------------------------------
-  very less code             | hard to understand
+  very little code           | hard to understand
   no external dependencies   | does not support multiple sections at same level
                              | fails if non-balanced braces occur in strings
                              | produces key/values in section-first/properties-second order
